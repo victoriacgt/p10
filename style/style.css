@@ -1,0 +1,144 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.container{
+    width:90%;
+    margin:auto;
+    max-width: 900px;
+    
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.price-plan{
+    width:90%;
+    margin: auto;
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    width:30%;
+    border-radius: 10px;
+    border:1px solid grey;
+    min-height: 200px;
+    box-shadow: 0 0 10px grey;
+}
+h2{
+    font-size:30px;
+    line-height:2;
+}
+li{
+    font-size:20px;
+    line-height:1.6;
+}
+.left li:before{
+    content: '$';
+    margin-right:5px;
+    font-weight:600;
+    color: green;
+}
+.left li:after{
+    content: '- sale';
+    color: red;
+    margin-left:5px;
+}
+.center li{
+    text-align: left;
+    margin-left:20px;
+}
+.center li:before{
+    display: inline-block;
+    content: '';
+    height:20px;
+    width:20px;
+    margin-right:5px;
+    background: green;
+}
+.right li{
+}
+.right li:before{
+    content: '\f2d3';
+    font-family:'fontAwesome';
+    float: left;
+    color: red;
+    margin-left:20px;
+}
+.right li:after{
+    content: '';
+    display: inline-block;
+    height:20px;
+    width:20px;
+    background-image: url("../img/price.png");
+    background-size:cover;
+    float: right;
+    margin-right:20px;
+}
+.price{
+    cursor: pointer;
+}
+.price:active{
+    background: red;
+}
+
+.order{
+    display: inline-block;
+    font-size:22px;
+    padding:5px 20px;
+    margin-top:50px;
+    border:1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.15s;
+    box-shadow: 1px 1px 5px grey;
+    position: relative;
+    background: #fff;
+}
+.order:after{
+    content: '';
+    position: absolute;
+    z-index:-1;
+    top:16px;
+    left:-50%;
+    width:200%;
+    border-bottom:2px dashed grey;
+}
+.order:hover{
+    box-shadow: 5px 5px 15px grey;
+}
+.order:active{
+    background: #fff;
+    box-shadow: 3px 3px 10px grey;
+    transform: translateY(1px);
+}
+.article{
+    width:90%;
+    margin: auto;
+    margin-top:50px;
+}
+.article p{
+    font-size:18px;
+    line-height:1.3;
+    text-align: left;
+    padding:10px;
+    cursor: url("../img/cursor.png"), auto;
+}
+.article p:first-child{
+    text-transform: uppercase;
+}
+.article p:last-child{
+    color: green;
+}
+.article p:nth-child(4){
+    font-weight:600;
+}
+.article p:nth-child(2n+2){
+    background: #ddd;
+}
+.article p:nth-child(2n+1){
+    background: #abc;
+}
